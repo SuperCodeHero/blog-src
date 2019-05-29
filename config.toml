@@ -1,66 +1,177 @@
 baseURL = "https://example.com"
-languageCode = "zh-cn"
-defaultContentLanguage = "zh-cn"
-title = "无尽光芒"                    # site title  # 网站标题
-theme = "zozo"
-hasCJKLanguage = true                # has chinese/japanese/korean ? # 自动检测是否包含 中文\日文\韩文
-summaryLength = 100
-paginate = 4                         # shows the number of articles  # 首页显示文章数量
-enableEmoji = true
-googleAnalytics = ""                 # your google analytics id
-disqusShortname = ""                 # your discuss shortname
+languageCode = "en"
+defaultContentLanguage = "en"
+title = "KeepIt"
+theme = "KeepIt"
 
-[author]                             # essential                     # 必需
-  name = "Zeuk"
+paginate = 12
+enableEmoji = true
+enableRobotsTXT = true
+googleAnalytics = ""
+disqusShortname = "yourdiscussshortname"
+
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"
+  priority = 0.5
 
 [blackfriday]
-  smartypants = false
+  hrefTargetBlank = true
+  nofollowLinks = true
+  noreferrerLinks = true
 
-[[menu.main]]                        # config your menu  # 配置菜单
-  name = "首页"
-  weight = 10
-  identifier = "home"
-  url = "/"
-[[menu.main]]
-  name = "归档"
-  weight = 20
-  identifier = "archive"
-  url = "/posts/"
-[[menu.main]]
-  name = "标签"
-  weight = 30
-  identifier = "tags"
-  url = "/tags/"
-[[menu.main]]
-  name = "关于"
-  weight = 40
-  identifier = "about"
-  url = "/about/"
+[Permalinks]
+ posts = "/:year/:filename/"
+
+[menu]
+  [[menu.main]]
+    name = "Blog"
+    url = "/posts/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Categories"
+    url = "/categories/"
+    weight = 3
+
+  [[menu.main]]
+    name = "About"
+    url = "/about"
+    weight = 4
 
 [params]
-  subTitle = "the site subtitle"                                       # site's subTitle  # 网站二级标题
-  footerSlogan = "我的精神家园"                                          # site's footer slogan  # 网站页脚标语
-  keywords = ["Hugo", "theme","zozo"]                                  # site's keywords  # 网站关键字
-  description = "Hugo theme zozo example site."                        # site's description  # 网站描述
+    since = 2012
+    author = "Fastbyte01"               # Author's name
+    subtitle = "A Hugo theme"       # Subtitle
+    cdn_url = ""           # Base CDN URL
+    home_mode = "" # post or other
 
-# mathjax
-  enableMathJax = true                                                 # enable mathjax  # 是否使用mathjax（数学公式）
+    google_verification = ""
+    bing_verification = ""
+    yandex_verification = ""
+    pinterest_verification = ""
+    baidu_verification = ""
+    
+    avatar = "/images/me/avatar.jpg" #comment it to use gravatar
+    socialShare = true
+    
+    description = "" # site description
+    keywords = "" # site keywords
 
-  enableSummary = true                                                 # display the article summary  # 是否显示文章摘要
-  
-# Valine.
-# You can get your appid and appkey from https://leancloud.cn
-# more info please open https://valine.js.org
+    license= 'Released under <a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+
+[params.gravatar]
+    #email = "example@gmail.com"   #uncomment and insert your email address to use gravatar
+
+
+[params.social]
+    GitHub = "xxxx"
+    Linkedin = "xxxx"
+    Twitter = "xxxx"
+    #Instagram = "xxxx"
+    #Email   = "xxxx"
+    Facebook = "xxxx"
+    #Telegram = "xxxx"
+    #Medium = "xxxx"
+    #Gitlab = "xxxx"
+    #Youtubelegacy = "xxxx"
+    #Youtubecustom = "xxxx"
+    #Youtubechannel = "xxxx"
+    #Tumblr ="xxxx"
+    #Quora = "xxxx"
+    #Keybase = "xxxx"
+    #Pinterest = "xxxx"
+    #Reddit = "xxxx"
+    #Codepen = "xxxx"
+    #Bitbucket = "xxxx"
+    #Stackoverflow = "xxxxx"
+    #Weibo = "xxxx"
+    #Odnoklassniki = "xxxx"
+    #VKontakte = "xxxx"
+    #Flickr = "xxxx"
+    #Xing = "xxxx"
+    #Snapchat = "xxxx"
+    #Soundcloud = "xxxx"
+    #Spotify = "xxxx"
+    #Bandcamp = "xxxx"
+    #Paypal = "xxxx"
+    #Fivehundredpx = "xxxx"
+    #Mix = "xxxx"
+    #Goodreads = "xxxx"
+    #Lastfm = "xxxx"
+    #Foursquare = "xxxx"
+    #Hackernews = "xxxx"
+    #Kickstarter = "xxxx"
+    #Patreon = "xxxx"
+    #Steam = "xxxx"
+    #Twitch = "xxxx"
+    #Strava = "xxxx"
+    #Skype = "xxxx"
+    #Whatsapp = "xxxx"
+    #Zhihu = "xxxx"
+    #Douban = "xxxx"
+    #Angellist = "xxxx"
+    #Slidershare = "xxxx"
+    #Jsfiddle = "xxxx"
+    #Deviantart = "xxxx"
+    #Behance = "xxxx"
+    #Dribble = "xxxx"
+    #Wordpress = "xxxx"
+    #Vine = "xxxx"
+    #Googlescholar = "xxxx"
+    #Researchgate = "xxxx"
+    #Mastodon = "xxxx"
+    #Thingiverse = "xxxx"
+
+[params.share]
+Twitter = true
+Facebook = true
+#Reddit = true
+Linkedin = true
+#Pinterest = true
+#HackerNews = true
+#Mix = true
+#Tumblr = true
+#VKontakte = true
+#Douban = true
+#Weibo = true
+
+# Used only for Seo schema 
+copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
+
+[author]
+  name = "Fastbyte01"
+
+  [params.publisher]
+    name = "Fastbyte01"
+
+    [params.publisher.logo]
+      url = "logo.png"
+      width = 127
+      height = 40
+
+  [params.logo]
+    url = "logo.png"
+    width = 127
+    height = 40
+
+  [params.image]
+    url = "cover.png"
+    width = 800
+    height = 600
+
+[params.gitalk]           
+owner = ""              
+repo = ""               
+clientId = ""           
+clientSecret = ""   
+
 [params.valine]
   enable = false
-  appId = ""
-  appKey = ""
-  placeholder = " "
+  appId = 'your appId'
+  appKey = 'your appKey'
+  notify = false  # mail notifier , https://github.com/xCss/Valine/wiki
+  verify = false # Verification code
+  avatar = 'mm'
+  placeholder = 'your comments ...'
   visitor = true
-
-[social]
-  github = " "
-  twitter = " "
-  facebook = " "
-  weibo = " "
-  instagram = " "

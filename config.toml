@@ -27,13 +27,18 @@ disqusShortname = ""                 # your discuss shortname
   identifier = "archive"
   url = "/posts/"
 [[menu.main]]
-  name = "标签"
+  name = "分类"
   weight = 30
+  identifier = "categories"
+  url = "/categories/"
+[[menu.main]]
+  name = "标签"
+  weight = 40
   identifier = "tags"
   url = "/tags/"
 [[menu.main]]
   name = "关于"
-  weight = 40
+  weight = 50
   identifier = "about"
   url = "/about/"
 

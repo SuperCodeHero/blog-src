@@ -1,7 +1,7 @@
-baseURL = "https://example.com"
+baseURL = "http://supercodehero.gitee.io/hugo-web/"
 languageCode = "zh-cn"
 defaultContentLanguage = "zh-cn"
-title = "无尽光芒"                    # site title  # 网站标题
+title = "My Blog"                    # site title  # 网站标题
 theme = "zozo"
 hasCJKLanguage = true                # has chinese/japanese/korean ? # 自动检测是否包含 中文\日文\韩文
 summaryLength = 100
@@ -11,7 +11,7 @@ googleAnalytics = ""                 # your google analytics id
 disqusShortname = ""                 # your discuss shortname
 
 [author]                             # essential                     # 必需
-  name = "Zeuk"
+  name = "CodeHero"
 
 [blackfriday]
   smartypants = false
@@ -43,9 +43,9 @@ disqusShortname = ""                 # your discuss shortname
   url = "/about/"
 
 [params]
-  subTitle = "the site subtitle"                                       # site's subTitle  # 网站二级标题
-  footerSlogan = "我的精神家园"                                          # site's footer slogan  # 网站页脚标语
-  keywords = ["Hugo", "theme","zozo"]                                  # site's keywords  # 网站关键字
+  subTitle = "从现在开始, 记录我的脚步."                                       # site's subTitle  # 网站二级标题
+  footerSlogan = ""                                          # site's footer slogan  # 网站页脚标语
+  keywords = ["Hugo", "blog","zozo"]                                  # site's keywords  # 网站关键字
   description = "Hugo theme zozo example site."                        # site's description  # 网站描述
 
 # mathjax
@@ -64,8 +64,9 @@ disqusShortname = ""                 # your discuss shortname
   visitor = true
 
 [social]
-  github = " "
-  twitter = " "
-  facebook = " "
-  weibo = " "
-  instagram = " "
+  github = "https://www.github.com/supercodehero"
+  #twitter = " "
+  #facebook = " "
+  #weibo = " "
+  #instagram = " "
+  mail = "mailto:codehero@foxmail.com"

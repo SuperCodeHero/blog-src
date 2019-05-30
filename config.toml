@@ -1,4 +1,4 @@
-baseURL = "http://supercodehero.gitee.io/hugo-web/"
+baseURL = "http://supercodehero.gitee.io/blog/"
 languageCode = "zh-cn"
 defaultContentLanguage = "zh-cn"
 title = "My Blog"                    # site title  # 网站标题
